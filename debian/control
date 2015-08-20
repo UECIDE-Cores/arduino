@@ -1,0 +1,194 @@
+Source: arduino
+Section: cores
+XBSC-Family: avr
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://arduino.cc
+
+Package: arduino
+Architecture: all
+Depends: avr-gcc
+XBSC-Group: Arduino
+Recommends: libeeprom-arduino, libesplora-arduino, libethernet-arduino, libfirmata-arduino, libgsm-arduino, libliquidcrystal-arduino, libsd-arduino, libservo-arduino, libsoftwareserial-arduino, libspi-arduino, libstepper-arduino, libtft-arduino, libwifi-arduino, libwire-arduino
+Description: Arduino 1.0.x
+ The standard Arduino core for AVR boards
+
+Package: robot
+Architecture: all
+XBSC-Group: Arduino
+Recommends: libcontrol-robot, libirremote-robot, libmotor-robot
+Depends: avr-gcc
+Description: Arduino 1.0.x Robot Control
+ The Robot Control Arduino core for AVR boards
+
+Package: libeeprom-arduino
+Architecture: all
+Depends: arduino
+Provides: EEPROM.h
+Section: libraries
+XBSC-Group: Storage
+XBSC-Subgroup: EEPROM
+Description: Arduino EEPROM Library
+ Store small amounts of data in the EEPROM non-volatile memory of the
+ AVR microcontrollers.
+
+Package: libesplora-arduino
+Architecture: all
+Depends: arduino
+Provides: Esplora.h
+Section: libraries
+XBSC-Group: Board Support
+Description: Arduino Esplora
+ Simple interface to the Arduino Esplora on-board hardware and 
+ peripherals.
+
+Package: libethernet-arduino
+Architecture: all
+Depends: arduino, libspi-arduino
+Provides: Ethernet.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Description: Arduino Ethernet
+ Library for the Arduino Ethernet (W5100) Shield.
+
+Package: libfirmata-arduino
+Architecture: all
+Provides: Firmata.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Protocols
+Depends: arduino
+Description: Arduino Firmata
+ The Firmata system is a method to control a board through a generic
+ serial protocol.
+
+Package: libgsm-arduino
+Architecture: all
+Provides: GSM.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Modems
+Depends: arduino
+Description: Arduino GSM Library
+ Communicate with a GSM Modem.
+
+Package: libliquidcrystal-arduino
+Architecture: all
+Provides: LiquidCrystal.h
+Section: libraries
+XBSC-Group: Display
+XBSC-Subgroup: LCD
+Depends: arduino
+Description: Arduino Liquid Crystal library
+ HD44780 LCD Interface Library
+
+Package: libsd-arduino
+Architecture: all
+Provides: SD.h
+Section: libraries
+XBSC-Group: Storage
+XBSC-Subgroup: SD and MMC Cards
+Depends: arduino
+Description: Arduino SD Library
+ The standard Arduino SD card access library
+
+Package: libservo-arduino
+Architecture: all
+Provides: Servo.h
+Section: libraries
+XBSC-Group: Motor
+XBSC-Subgroup: Servo
+Depends: arduino
+Description: Arduino Servo Library
+ Drive servos with the hardware PWM pins of the Arduino
+
+Package: libsoftwareserial-arduino
+Architecture: all
+Provides: SoftwareSerial.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Serial
+Depends: arduino
+Description: Arduino Software Serial
+ Primitive bit-banged serial emulation for Arduino boards
+
+Package: libspi-arduino
+Architecture: all
+Provides: SPI.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: SPI
+Depends: arduino
+Description: Arduino SPI Library
+ The standard Arduino SPI library
+
+Package: libstepper-arduino
+Architecture: all
+Provides: Stepper.h
+Section: libraries
+XBSC-Group: Motor
+XBSC-Subgroup: Stepper
+Depends: arduino
+Description: Arduino stepper motor library
+ Control stepper motors from an Arduino
+
+Package: libtft-arduino
+Architecture: all
+Provides: TFT.h
+Section: libraries
+XBSC-Group: Display
+XBSC-Subgroup: TFT
+Depends: arduino
+Description: Arduino TFT Library
+ Connect to the Arduino TFT shields
+
+Package: libwifi-arduino
+Architecture: all
+Provides: WiFi.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Depends: arduino
+Description: Arduino WiFi Library
+ Interface with the Arduino WiFi Shield
+
+Package: libwire-arduino
+Architecture: all
+Provides: Wire.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: I2C
+Depends: arduino
+Description: Arduino Wire Library
+ Connect I2C devices to an Arduino
+
+
+Package: libcontrol-robot
+Architecture: all
+Provides: Robot-UL-Control.h
+Section: libraries
+XBSC-Group: Robotics
+Depends: robot
+Description: Arduino Robot Control library
+ Robot Control library for the Arduino "Robot" core.
+
+Package: libirremote-robot
+Architecture: all
+Provides: RobotIRremote.h
+Section: libraries
+XBSC-Group: Robotics
+Depends: robot
+Description: Arduino Robot IR Remote library
+ Infra-Red Remote Control library for the Arduino "Robot" core.
+
+Package: libmotor-robot
+Architecture: all
+Provides: Robot-UL-Motor.h
+Section: libraries
+XBSC-Group: Robotics
+Depends: robot
+Description: Arduino Robot Motor library
+ Motor Control library for the Arduino "Robot" core.

@@ -1,0 +1,5 @@
+hardware/arduino/cores/arduino cores/arduino
+build/shared/examples cores/arduino
+uecide/tools cores/arduino
+uecide/core.txt cores/arduino
+uecide/reference cores/arduino
