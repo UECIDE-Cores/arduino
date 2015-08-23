@@ -30,6 +30,8 @@ upload.arduino.verbose=-v
 upload.arduino.quiet=-q::-q
 upload.arduino.percent.character=#
 upload.arduino.percent.multiply=2
+upload.arduino.rts=yes
+upload.arduino.dtr=yes
 
 upload.usbasp.name=Upload using USBasp
 upload.usbasp.command.freebsd=${core.root}/tools/freebsd/avrdude::-B10::-p${build.mcu}::-C${core.root}/tools/freebsd/avrdude.conf::-cusbasp::-Uflash:w:${build.path}/${filename}.hex:i::${verbose}
