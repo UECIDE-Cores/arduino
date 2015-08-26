@@ -8,6 +8,8 @@ core.header=Arduino.h
 core.version=106
 version=1.0.x
 revision=2
+core.cppflags=-std=gnu++11
+core.cflags=-std=gnu11
 
 core.library.arduino=arduino
 
