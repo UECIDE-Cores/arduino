@@ -2,8 +2,8 @@
 
 my $package = "unknown";
 
-my $hi = 23;
-my $maj = 1;
+my $hi = 1;
+my $maj = 0;
 my $min = 0;
 
 my $out = "";
@@ -21,7 +21,7 @@ open(LOG, "git log --reverse --pretty=format:'%aN|%aE|%cD|%s'|");
 while (my $l = <LOG>) {
     chomp($l);
     my ($author, $email, $time, $subject) = split(/\|/, $l);
-    my $add = "$package (1.0.$hi-${maj}p${min}) uecide; urgency=low\n";
+    my $add = "$package ($hi.$min.$maj) uecide; urgency=low\n";
     $add .= "\n";
     $add .= "  * $subject\n";
     $add .= "\n";

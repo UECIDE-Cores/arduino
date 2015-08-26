@@ -11,6 +11,7 @@ Package: arduino
 Architecture: all
 Depends: avr-gcc
 XBSC-Group: Arduino
+XBSC-SoftwareVersion: 1.0.6
 Recommends: libeeprom-arduino, libesplora-arduino, libethernet-arduino, libfirmata-arduino, libgsm-arduino, libliquidcrystal-arduino, libsd-arduino, libservo-arduino, libsoftwareserial-arduino, libspi-arduino, libstepper-arduino, libtft-arduino, libwifi-arduino, libwire-arduino
 Description: Arduino 1.0.x
  The standard Arduino core for AVR boards
