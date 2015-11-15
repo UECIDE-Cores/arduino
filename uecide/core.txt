@@ -65,7 +65,7 @@ upload.usbtiny.quiet=-q::-q
 
 upload.protocol=arduino
 
-sketch.upload=arduino::usbasp:usbtiny
+sketch.upload=arduino::usbasp::usbtiny
 bootloader.upload=blusbasp
 
 icon.128=icons/arduino128.png
